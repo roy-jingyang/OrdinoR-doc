@@ -1,0 +1,502 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>orgminer.SocialNetworkMiner package &mdash; OrgMiner 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> OrgMiner
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">orgminer.SocialNetworkMiner package</a><ul>
+<li><a class="reference internal" href="#submodules">Submodules</a></li>
+<li><a class="reference internal" href="#module-orgminer.SocialNetworkMiner.causality">orgminer.SocialNetworkMiner.causality module</a></li>
+<li><a class="reference internal" href="#module-orgminer.SocialNetworkMiner.joint_activities">orgminer.SocialNetworkMiner.joint_activities module</a></li>
+<li><a class="reference internal" href="#module-orgminer.SocialNetworkMiner.joint_cases">orgminer.SocialNetworkMiner.joint_cases module</a></li>
+<li><a class="reference internal" href="#module-orgminer.SocialNetworkMiner.utilities">orgminer.SocialNetworkMiner.utilities module</a></li>
+<li><a class="reference internal" href="#module-orgminer.SocialNetworkMiner">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">OrgMiner</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>orgminer.SocialNetworkMiner package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/orgminer.SocialNetworkMiner.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="orgminer-socialnetworkminer-package">
+<h1>orgminer.SocialNetworkMiner package<a class="headerlink" href="#orgminer-socialnetworkminer-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-orgminer.SocialNetworkMiner.causality">
+<span id="orgminer-socialnetworkminer-causality-module"></span><h2>orgminer.SocialNetworkMiner.causality module<a class="headerlink" href="#module-orgminer.SocialNetworkMiner.causality" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the implementation of methods for mining social
+networks from an event log, using metrics based on causality <a class="reference internal" href="#r0251b77eff5b-1" id="id1">[1]</a>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#module-orgminer.SocialNetworkMiner.joint_activities" title="orgminer.SocialNetworkMiner.joint_activities"><code class="xref py py-mod docutils literal notranslate"><span class="pre">orgminer.SocialNetworkMiner.joint_activities</span></code></a>, <a class="reference internal" href="#module-orgminer.SocialNetworkMiner.joint_cases" title="orgminer.SocialNetworkMiner.joint_cases"><code class="xref py py-mod docutils literal notranslate"><span class="pre">orgminer.SocialNetworkMiner.joint_cases</span></code></a></p>
+</div>
+<p class="rubric">Notes</p>
+<p>Including real causality into consideration requires the presence of a
+process model related to the given event log.</p>
+<p class="rubric">References</p>
+<dl class="citation">
+<dt class="label" id="r0251b77eff5b-1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Van der Aalst, W. M. P., Reijers, H. A., &amp; Song, M. (2005).
+Discovering social networks from event logs. <em>Computer Supported
+Cooperative Work (CSCW)</em>, 14(6), 549-593.
+<a class="reference external" href="https://doi.org/10.1007/s10606-005-9005-9">https://doi.org/10.1007/s10606-005-9005-9</a></p>
+</dd>
+</dl>
+<dl class="function">
+<dt id="orgminer.SocialNetworkMiner.causality.handover">
+<code class="sig-prename descclassname">orgminer.SocialNetworkMiner.causality.</code><code class="sig-name descname">handover</code><span class="sig-paren">(</span><em class="sig-param">el</em>, <em class="sig-param">real_causality</em>, <em class="sig-param">direct_succession</em>, <em class="sig-param">multiple_transfers</em>, <em class="sig-param">depth=1</em>, <em class="sig-param">beta=1</em><span class="sig-paren">)</span><a class="headerlink" href="#orgminer.SocialNetworkMiner.causality.handover" title="Permalink to this definition">¶</a></dt>
+<dd><p>Discover a social network from an event log based on handover of
+work metric, which considers the relationship between a pair of
+resources completing subsequent activities in process execution.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>el</strong> : DataFrame</p>
+<blockquote>
+<div><p>An event log.</p>
+</div></blockquote>
+<p><strong>real_causality</strong> : bool</p>
+<blockquote>
+<div><p>A boolean flag indicating whether to consider arbitrary
+transfers of work, or only those for which there is a causal
+dependency according to the process model.</p>
+</div></blockquote>
+<p><strong>direct_succession</strong> : bool</p>
+<blockquote>
+<div><p>A boolean flag indicating whether to consider the degree of
+causality, i.e., direct or indirect succession.</p>
+</div></blockquote>
+<p><strong>multiple_transfers</strong> : bool</p>
+<blockquote>
+<div><p>A boolean flag indicating whether to consider multiple transfers
+within one case or not.</p>
+</div></blockquote>
+<p><strong>depth</strong> : int, optional, default 1</p>
+<blockquote>
+<div><p>The degree of causality to be considered. Only use when
+<cite>direct_succession</cite> is False, i.e., indirect succession
+considered.</p>
+</div></blockquote>
+<p><strong>beta</strong> : float, optional, default 1</p>
+<blockquote>
+<div><p>The causality fall factor.</p>
+</div></blockquote>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>sn</strong> : NetworkX DiGraph</p>
+<blockquote>
+<div><p>The discovered social network.</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="orgminer.SocialNetworkMiner.causality.subcontracting">
+<code class="sig-prename descclassname">orgminer.SocialNetworkMiner.causality.</code><code class="sig-name descname">subcontracting</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#orgminer.SocialNetworkMiner.causality.subcontracting" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-orgminer.SocialNetworkMiner.joint_activities">
+<span id="orgminer-socialnetworkminer-joint-activities-module"></span><h2>orgminer.SocialNetworkMiner.joint_activities module<a class="headerlink" href="#module-orgminer.SocialNetworkMiner.joint_activities" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the implementation of methods for mining social
+networks from an event log, using metrics based on joint activities <a class="reference internal" href="#rdc595ff343d8-1" id="id2">[1]</a>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#module-orgminer.SocialNetworkMiner.causality" title="orgminer.SocialNetworkMiner.causality"><code class="xref py py-mod docutils literal notranslate"><span class="pre">orgminer.SocialNetworkMiner.causality</span></code></a>, <a class="reference internal" href="#module-orgminer.SocialNetworkMiner.joint_cases" title="orgminer.SocialNetworkMiner.joint_cases"><code class="xref py py-mod docutils literal notranslate"><span class="pre">orgminer.SocialNetworkMiner.joint_cases</span></code></a></p>
+</div>
+<p class="rubric">References</p>
+<dl class="citation">
+<dt class="label" id="rdc595ff343d8-1"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>Van der Aalst, W. M. P., Reijers, H. A., &amp; Song, M. (2005).
+Discovering social networks from event logs. <em>Computer Supported
+Cooperative Work (CSCW)</em>, 14(6), 549-593.
+<a class="reference external" href="https://doi.org/10.1007/s10606-005-9005-9">https://doi.org/10.1007/s10606-005-9005-9</a></p>
+</dd>
+</dl>
+<dl class="function">
+<dt id="orgminer.SocialNetworkMiner.joint_activities.distance">
+<code class="sig-prename descclassname">orgminer.SocialNetworkMiner.joint_activities.</code><code class="sig-name descname">distance</code><span class="sig-paren">(</span><em class="sig-param">profiles</em>, <em class="sig-param">metric='euclidean'</em>, <em class="sig-param">convert=False</em><span class="sig-paren">)</span><a class="headerlink" href="#orgminer.SocialNetworkMiner.joint_activities.distance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Discover a social network from an event log based on joint
+activities where distance-related measures are used.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>profiles</strong> : DataFrame</p>
+<blockquote>
+<div><p>A resource profile matrix.</p>
+</div></blockquote>
+<p><strong>metric</strong> : str, optional, default ‘euclidean’</p>
+<blockquote>
+<div><p>Choice of metrics for measuring the distance while calculating
+distance. Defaults to <code class="docutils literal notranslate"><span class="pre">'euclidean'</span></code>, meaning that euclidean
+distance is used for measuring distance.</p>
+</div></blockquote>
+<p><strong>convert</strong> : bool, optional, default False</p>
+<blockquote>
+<div><p>A boolean flag indicating whether to convert the edge weight
+values of the discovered network should be converted to
+similarity measure values. Defaults to False, i.e., keep as
+distance measure.</p>
+</div></blockquote>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>sn</strong> : NetworkX Graph</p>
+<blockquote>
+<div><p>The discovered social network.</p>
+</div></blockquote>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The edge weight values in a discovered social network correspond to
+the distances between a pair of rows in the input profile matrix,
+thus:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>A higher weight value indicates the two rows are less related.
+This is different from rest of the social network discovery
+metrics defined.</p></li>
+<li><p>The generated social network is undirected due to the nature
+of distance (or similarity) measures.</p></li>
+</ol>
+</div></blockquote>
+<p>Refer to scipy.spatial.distance.pdist for more detailed explanation
+of distance metrics.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="orgminer.SocialNetworkMiner.joint_activities.performer_activity_matrix">
+<code class="sig-prename descclassname">orgminer.SocialNetworkMiner.joint_activities.</code><code class="sig-name descname">performer_activity_matrix</code><span class="sig-paren">(</span><em class="sig-param">el</em>, <em class="sig-param">use_log_scale</em><span class="sig-paren">)</span><a class="headerlink" href="#orgminer.SocialNetworkMiner.joint_activities.performer_activity_matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build a resource profile matrix solely based on how frequently
+resources originated activities, i.e., performer-by-activity matrix.</p>
+<p>Each column in the result profile matrix corresponds with an
+activity captured in the given event log.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>el</strong> : DataFrame</p>
+<blockquote>
+<div><p>An event log.</p>
+</div></blockquote>
+<p><strong>use_log_scale</strong> : bool</p>
+<blockquote>
+<div><p>A boolean flag indicating whether to apply logarithm scaling on
+the values of the result profile matrix.</p>
+</div></blockquote>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>DataFrame</p>
+<blockquote>
+<div><p>The constructed resource profile matrix.</p>
+</div></blockquote>
+</dd>
+</dl>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<dl class="simple">
+<dt><a class="reference internal" href="orgminer.ResourceProfiler.html#orgminer.ResourceProfiler.raw_profiler.count_execution_frequency" title="orgminer.ResourceProfiler.raw_profiler.count_execution_frequency"><code class="xref py py-obj docutils literal notranslate"><span class="pre">orgminer.ResourceProfiler.raw_profiler.count_execution_frequency</span></code></a></dt><dd></dd>
+</dl>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="module-orgminer.SocialNetworkMiner.joint_cases">
+<span id="orgminer-socialnetworkminer-joint-cases-module"></span><h2>orgminer.SocialNetworkMiner.joint_cases module<a class="headerlink" href="#module-orgminer.SocialNetworkMiner.joint_cases" title="Permalink to this headline">¶</a></h2>
+<p>This module contains the implementation of methods for mining social
+networks from an event log, using metrics based on joint cases <a class="reference internal" href="#ra2c6f8bec27d-1" id="id4">[1]</a>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="#module-orgminer.SocialNetworkMiner.causality" title="orgminer.SocialNetworkMiner.causality"><code class="xref py py-mod docutils literal notranslate"><span class="pre">orgminer.SocialNetworkMiner.causality</span></code></a>, <a class="reference internal" href="#module-orgminer.SocialNetworkMiner.joint_activities" title="orgminer.SocialNetworkMiner.joint_activities"><code class="xref py py-mod docutils literal notranslate"><span class="pre">orgminer.SocialNetworkMiner.joint_activities</span></code></a></p>
+</div>
+<p class="rubric">References</p>
+<dl class="citation">
+<dt class="label" id="ra2c6f8bec27d-1"><span class="brackets"><a class="fn-backref" href="#id4">1</a></span></dt>
+<dd><p>Van der Aalst, W. M. P., Reijers, H. A., &amp; Song, M. (2005).
+Discovering social networks from event logs. <em>Computer Supported
+Cooperative Work (CSCW)</em>, 14(6), 549-593.
+<a class="reference external" href="https://doi.org/10.1007/s10606-005-9005-9">https://doi.org/10.1007/s10606-005-9005-9</a></p>
+</dd>
+</dl>
+<dl class="function">
+<dt id="orgminer.SocialNetworkMiner.joint_cases.working_together">
+<code class="sig-prename descclassname">orgminer.SocialNetworkMiner.joint_cases.</code><code class="sig-name descname">working_together</code><span class="sig-paren">(</span><em class="sig-param">el</em>, <em class="sig-param">normalize=None</em><span class="sig-paren">)</span><a class="headerlink" href="#orgminer.SocialNetworkMiner.joint_cases.working_together" title="Permalink to this definition">¶</a></dt>
+<dd><p>Discover a social network from an event log based on working
+together metric, considering how often two resources were involved
+in the same case.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>el</strong> : DataFrame</p>
+<blockquote>
+<div><p>An event log.</p>
+</div></blockquote>
+<p><strong>normalize</strong> : {None, ‘resource’, ‘total’}, optional, default None</p>
+<blockquote>
+<div><p>Options for setting the normalization strategy on the edge
+weight values. Could be one of the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">None</span></code>, no normalization will be used.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'resource'</span></code>, normalized by the amount of cases each
+resource was involved in. Note that this could lead to a
+directed graph being derived since the normalization
+is subject to each individual resource.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'total'</span></code>, normalized by the total amount of cases
+recorded in the event log.</p></li>
+</ul>
+</div></blockquote>
+</div></blockquote>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><strong>sn</strong> : NetworkX Graph or DiGraph</p>
+<blockquote>
+<div><p>The discovered social network.</p>
+</div></blockquote>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><p>ValueError</p>
+<blockquote>
+<div><p>If the specified option for normalization is invalid.</p>
+</div></blockquote>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+<div class="section" id="module-orgminer.SocialNetworkMiner.utilities">
+<span id="orgminer-socialnetworkminer-utilities-module"></span><h2>orgminer.SocialNetworkMiner.utilities module<a class="headerlink" href="#module-orgminer.SocialNetworkMiner.utilities" title="Permalink to this headline">¶</a></h2>
+<p>This module provides the necessary utilities for processing data
+structures related to social network mining.</p>
+<dl class="function">
+<dt id="orgminer.SocialNetworkMiner.utilities.select_edges_by_weight">
+<code class="sig-prename descclassname">orgminer.SocialNetworkMiner.utilities.</code><code class="sig-name descname">select_edges_by_weight</code><span class="sig-paren">(</span><em class="sig-param">sn</em>, <em class="sig-param">weight='weight'</em>, <em class="sig-param">low=None</em>, <em class="sig-param">high=None</em>, <em class="sig-param">percentage=None</em><span class="sig-paren">)</span><a class="headerlink" href="#orgminer.SocialNetworkMiner.utilities.select_edges_by_weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select and keep edges in an input social network based on edge
+weight values.</p>
+<dl class="field-list">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>sn</strong> : NetworkX (Di)Graph</p>
+<blockquote>
+<div><p>A social network.</p>
+</div></blockquote>
+<p><strong>weight</strong> : str, optional, default ‘weight’</p>
+<blockquote>
+<div><p>Name of the weight attribute in the network. Defaults to
+<code class="docutils literal notranslate"><span class="pre">'weight'</span></code>, which is the default weight attribute name used by
+NetworkX.</p>
+</div></blockquote>
+<p><strong>low</strong> : float, optional</p>
+<blockquote>
+<div><p>The lower bound value, used for the first way of filtering.</p>
+</div></blockquote>
+<p><strong>high</strong> : float, optional</p>
+<blockquote>
+<div><p>The upper bound value, used for the first way of filtering.</p>
+</div></blockquote>
+<p><strong>percentage</strong> : str, optional</p>
+<blockquote>
+<div><p>The specified percentage value, used for the second way of
+filtering. Should be formatted as a plus/minus sign concatenated
+with a float number in range [0, 1), e.g., <code class="docutils literal notranslate"><span class="pre">+0.75</span></code>.</p>
+</div></blockquote>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>psn: NetworkX (Di)Graph</p>
+<blockquote>
+<div><p>The social network with certain edges filtered out.</p>
+</div></blockquote>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>The filtering process can be done in either of the two ways:</p>
+<blockquote>
+<div><p>1. Define an interval [<cite>low</cite>, <cite>high</cite>) and keep only edges
+with weight values falling within the interval. If either one of
+the two sides of bound is not defined, infinity is used instead.</p>
+<p>2. Specify a percentage value and keep only edges with weight
+values within the range, e.g., with <code class="docutils literal notranslate"><span class="pre">'+0.75'</span></code> specified, only
+edges with the highest 75% weight values are kept.</p>
+</div></blockquote>
+<p>Note that one of the two ways must be specified, and the first would
+override the second if both are presented.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-orgminer.SocialNetworkMiner">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-orgminer.SocialNetworkMiner" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Jing Yang
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

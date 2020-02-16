@@ -5,13 +5,19 @@
 
 .. _contents:
 
-********************
-Overview of OrgMiner
-********************
+********
+OrgMiner
+********
 
 Overview
 ========
 OrgMiner: tookit for Process Mining on the organizational perspective
+
+The current release of OrgMiner is based on our recent research progress 
+reported in a preprint paper submitted to the journal of Information 
+Systems. The library includes all the necessary modules and functions to 
+implement the approach proposed in the paper and thus enables 
+replicating the designed experiments for evaluation.
 
 Audience
 --------
@@ -24,6 +30,7 @@ Python
 
 Licensing information
 ---------------------
+The GNU GPLv3 license applies for artifacts of this project.
 
 Documentation
 -------------

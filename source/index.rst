@@ -3,14 +3,11 @@
    You can adapt this file completely to your liking, but it should at 
    least contain the root `toctree` directive.
 
-.. _contents:
+.. _index:
 
-********
-OrgMiner
-********
-
-Overview
-========
+********************
+Overview of OrgMiner
+********************
 OrgMiner: tookit for Process Mining on the organizational perspective
 
 *Process mining* is an emerging discipline that bridges the gap between 
@@ -42,21 +39,19 @@ mining, which concerns the structuring of human resources into groups
 and how it is related with business processes.
 
 The current release of OrgMiner is based on our recent research progress 
-reported in a preprint paper submitted to the journal of Information 
-Systems [yang2020]_. The library includes all the necessary modules and 
-functions to implement the approach proposed in the paper and thus 
+reported in a preprint paper [yang2020]_  submitted to the journal 
+of Information Systems. The library includes all the necessary modules 
+and functions to implement the approach proposed in the paper and thus 
 enables replicating the designed experiments for evaluation.
 
 Licensing information
----------------------
+=====================
 The GNU GPLv3 license_ applies for artifacts of the OrgMiner project.
 
 How to Use
-----------
-Install OrgMiner
-""""""""""""""""
+==========
 To get started, OrgMiner needs to be installed on your machine. See 
-Installation_ for a step-by-step guide.
+:ref:`install` for a step-by-step guide.
 
 OrgMiner could be used in two ways:
 
@@ -64,9 +59,9 @@ through existed applications
 """"""""""""""""""""""""""""
 You are welcome to be a user of the developed main programs either 
 with a simple graphical interface, e.g., the prototype for producing 
-the visualization in the paper [yang2020]_, or those interacted via 
-command-line. See Examples_ for detailed introduction of these 
-available options as well as instructions on how to run them.
+the visualization in the paper, or those interacted via 
+command-line. See :ref:`examples_index` for detailed introduction of 
+these available options as well as instructions on how to run them.
 
 through developing new applications
 """""""""""""""""""""""""""""""""""
@@ -78,8 +73,9 @@ We are currently working on a structured references on how to do this.
 For now a starting point could be modifying the existed programs and 
 adjust the parameters to your liking.
 
+.. TODO to be revised: citing, examples, credits
 Documentation
--------------
+=============
 
 .. only:: html
 
@@ -89,33 +85,27 @@ Documentation
    :maxdepth: 1
 
    install
-   tutorial
-   reference/index
-   auto_examples/index
-   license
-   credits
+   examples/index
    citing
-   bibliography
+   credits
+   bib
 
 Indices and tables
-------------------
+==================
 * :ref:`modindex`
 
 Related Softwares
------------------
-* pm4py
-* Disco
-* pandas
-* NetworkX
+=================
+* pm4py_
+* Disco_
+* pandas_
+* NetworkX_
 
-References
-----------
-.. [vdaalst2016] Van der Aalst, W. M. P. (2016). Process Mining: Data Science in Action (2nd ed.). Springer.
-.. [song2008] Song, M., & van der Aalst, W. M. P. (2008). Towards comprehensive support for organizational mining. Decision Support Systems, 46(1), 300–317.
-.. [yang2020] (Preprint pitation to be added)
 
 .. _Python: https://www.python.org/
 .. _license: https://www.gnu.org/licenses/gpl-3.0.en.html
+.. _pm4py: https://pm4py.fit.fraunhofer.de/
+.. _Disco: https://fluxicon.com/disco/
+.. _pandas: https://pandas.pydata.org/
+.. _NetworkX: https://networkx.github.io/
 
-.. _Installation: 
-.. _Examples: 

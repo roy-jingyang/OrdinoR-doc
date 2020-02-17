@@ -23,7 +23,8 @@ copyright = '2019, Jing Yang'
 author = 'Jing Yang (Roy)'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
+version = '0.0.1alpha'
+release = version
 
 
 # -- General configuration ---------------------------------------------------

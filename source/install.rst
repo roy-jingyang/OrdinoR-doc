@@ -11,22 +11,22 @@ Python installed on your machine.
 We recommend using `Anaconda Python <https://docs.anaconda.com/anaconda/>`_, 
 a distribution of Python featured with data science packages and 
 enhanced support of package manager which will make life easier in 
-resolving software dependencies. You may want to install only the 
-minimal core of Anaconda Python only: 
+resolving software dependencies. 
+
+You may want to install only the minimal core of Anaconda Python: 
 `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_, as it 
 will suffice the prerequisites.
 
 Install OrgMiner
 ================
 OrgMiner can be installed by directly using the Anaconda Python package
-manager. 
-In Unix-like systems,
+manager.
+
+For Unix-like systems (Linux, MacOS), open the terminal; for Windows, 
+open an `Anaconda Prompt <https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-anaconda-prompt>`_.
+Enter the following command
 
 ``conda install -c roy-jingyang orgminer``
-
-and for Windows,
-
-````
 
 should be able to install OrgMiner along with all necessary dependencies.
 

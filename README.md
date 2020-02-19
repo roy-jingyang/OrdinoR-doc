@@ -1,2 +1,2 @@
 # OrgMiner-doc
-Documentation repository for OrgMiner
+Source code repository for OrgMiner documentation: https://orgminer.readthedocs.io/

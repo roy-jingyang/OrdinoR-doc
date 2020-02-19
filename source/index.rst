@@ -3,12 +3,23 @@
    You can adapt this file completely to your liking, but it should at 
    least contain the root `toctree` directive.
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   install
+   examples/index
+   citing
+   credits
+   bib
+
 .. _index:
 
 ********************
 Overview of OrgMiner
 ********************
-OrgMiner: tookit for Process Mining on the organizational perspective
+OrgMiner: Python tookit for Process Mining on the organizational 
+perspective
 
 *Process mining* is an emerging discipline that bridges the gap between 
 traditional process science (e.g., simulation-based business process 
@@ -73,22 +84,8 @@ We are currently working on a structured references on how to do this.
 For now a starting point could be modifying the existed programs and 
 adjust the parameters to your liking.
 
-.. TODO to be revised: citing, examples, credits
-Documentation
-=============
-
-.. only:: html
-
-    :Release: |version|
-
-.. toctree::
-   :maxdepth: 1
-
-   install
-   examples/index
-   citing
-   credits
-   bib
+Further contributions to this project are welcomed.
+Email_ us or find us on GitHub_.
 
 Indices and tables
 ==================
@@ -108,4 +105,7 @@ Related Softwares
 .. _Disco: https://fluxicon.com/disco/
 .. _pandas: https://pandas.pydata.org/
 .. _NetworkX: https://networkx.github.io/
+
+.. _Email: mailto:roy.j.yang@qut.edu.au
+.. _GitHub: https://github.com/roy-jingyang/OrgMiner
 

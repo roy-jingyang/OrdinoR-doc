@@ -12,3 +12,10 @@
 # Ignore build directory
 build/
 
+# Ignore dev-use server applications
+app.py
+docstring.template.py
+make.bat
+Makefile
+run.sh
+

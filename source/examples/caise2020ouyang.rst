@@ -13,13 +13,13 @@ This demo was originally a standalone program hosted on a
 
 .. note::
    Before proceeding, make sure you have installed OrgMiner on your 
-   machine. (:ref:`How to install? <Install>`)
+   machine. (:ref:`How to install? <install>`)
 
 Replicate the experiments in the paper
 --------------------------------------
 
 Download and extract the bundled zip from 
-`here <https://github.com/roy-jingyang/caise-2020-Ouyang_Discovering/archive/master.zip>`_,
+`HERE <https://github.com/roy-jingyang/caise-2020-Ouyang_Discovering/archive/master.zip>`_,
 in which you would find the following files:
 
 .. code-block:: bash
@@ -40,7 +40,8 @@ in which you would find the following files:
 
 Python scripts under folder ``main/`` are the main programs and in 
 folder ``data/`` we provide the event logs necessary for replicating the 
-experiments as reported in Sect. 5 in the paper [ouyang2020]_.
+experiments as reported in Sect. 5 in the paper [ouyang2020]_, sourced 
+from `4TU.ResearchData <https://data.4tu.nl/repository/uuid:31a308ef-c844-48da-948c-305d167a0ec1>`_.
 
 Appendix notes on the dataset
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

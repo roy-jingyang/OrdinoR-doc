@@ -1,8 +1,8 @@
 .. _install:
 
-*******
-Install
-*******
+************
+Installation
+************
 
 Prerequisites
 =============
@@ -44,6 +44,8 @@ Enter the following command
 which should be able to install OrgMiner along with all remaining 
 mandatory dependencies resolved.
 
+.. _install_optional:
+
 Optional Packages
 =================
 Some extra packages are needed for some main programs built upon 
@@ -57,7 +59,8 @@ following packages:
 * Flask, a lightweight WSGI web application framework. 
 * pygraphviz, a Python interface to Graphviz.
 
-To run Arya, use the following command to append these optional packages:
+To resolve the depedencies for Arya, use the following command to append 
+these optional packages:
 
 ``pip install orgminer[arya]``
 

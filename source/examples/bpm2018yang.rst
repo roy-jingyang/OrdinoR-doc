@@ -1,6 +1,6 @@
 .. _examples_bpm2018yang:
 
-Discover organizational models with overlaps
+Discover organizational groups with overlaps
 ============================================
 
 This page presents a demo program used in a paper accepted and published 
@@ -13,13 +13,13 @@ This demo was originally a standalone program hosted on a
 
 .. note::
    Before proceeding, make sure you have installed OrgMiner on your 
-   machine. (:ref:`How to install? <Install>`)
+   machine. (:ref:`How to install? <install>`)
 
 How to Use
 ----------
 
 Download and extract the bundled zip from 
-`here <https://github.com/roy-jingyang/bpm-2018-Yang_Find/archive/master.zip>`_,
+`HERE <https://github.com/roy-jingyang/bpm-2018-Yang_Find/archive/master.zip>`_,
 in which you would find the following files:
 
 .. code-block:: bash

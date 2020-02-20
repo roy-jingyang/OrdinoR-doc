@@ -1,11 +1,14 @@
-.. _examples_jis2020yang-arya:
+.. _examples_infsyst2020yang-arya:
 
 "OrgMining 2.0": an interactive demo
 ====================================
 
 This page presents an interactive demo developed as a simple client-server 
-application, for performing organizational model discovery and visualizing 
-the produced models.
+application, for performing organizational model discovery and 
+visualizing the produced models.
+
+Source code of the demo can be found in a 
+`GitHub repository <https://github.com/roy-jingyang/OrgMiner-Arya>`_.
 
 .. note::
    Before proceeding, make sure you have installed OrgMiner with the 

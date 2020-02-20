@@ -8,8 +8,9 @@ This page presents a demo program used in a paper submitted to CAiSE
 grouping from event logs, which then facilitates analysis of resource 
 group behavior for the purpose of performance analysis.
 
-This demo was originally a standalone program hosted on a 
-`GitHub repository <https://github.com/roy-jingyang/caise-2020-Ouyang_Discovering>`_.
+This demo was originally hosted as a standalone program on a 
+`GitHub repository <https://github.com/roy-jingyang/caise-2020-Ouyang_Discovering>`_, 
+where the source code of the following demo now resides.
 
 .. note::
    Before proceeding, make sure you have installed OrgMiner on your 

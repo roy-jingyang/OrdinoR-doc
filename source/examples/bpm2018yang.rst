@@ -43,7 +43,12 @@ like as workspace), and run the program with the following command:
 
 ``python main.py [path_to_input_log_file] [path_to_output_result]``
 
-by specifying paths to the input and output accordingly.
+with paths to the input and output specified accordingly.
+
+.. note::
+
+    For a simple help message on how to use the program in-place, type:
+    ``python main.py --help``
 
 Log files of `IEEE XES <https://xes-standard.org/>`_ format are 
 supported as input.

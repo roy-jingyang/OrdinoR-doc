@@ -13,7 +13,7 @@ Source code of the demo can be found in a
 .. note::
    Before proceeding, make sure you have installed OrgMiner with the 
    optional packages for "Arya" on your machine. 
-   (:ref:`How to install? <install_optional>`)
+   (:ref:`How to install? <install>`)
 
 How to Use
 ----------

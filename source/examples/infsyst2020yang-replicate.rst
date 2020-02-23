@@ -20,15 +20,8 @@ following files:
     .
     ├── batch.py
     ├── configs
-    │   ├── final
-    │   │   ├── bpic17.graphml
-    │   │   └── wabo.graphml
-    │   └── complete
-    │       ├── bpic17.graphml
-    │       └── wabo.graphml
-    ├── data
-    │   ├── bpic17.xes
-    │   └── wabo.xes
+    │   ├── bpic17.graphml
+    │   └── wabo.graphml
     ├── data.zip
     ├── execute.py
     └── trace_clustering_reports
@@ -65,33 +58,16 @@ Note that these log files have been preprocessed accordingly (see Sect.
 
 2. (Optional) Edit the experiment setup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Navigate to folder ``configs/``, you will find 2 subfolders:
+Navigate to folder ``configs/``, you will find 2 configuration files:
 
 .. code-block:: bash
 
     configs/
-    ├── final
-    │   ├── bpic17.graphml
-    │   └── wabo.graphml
-    └── complete
-        ├── bpic17.graphml
-        └── wabo.graphml
+    ├── bpic17.graphml
+    └── wabo.graphml
 
-From here we offer two options for those who wish to replicate the 
-experiments:
-
-* using the configuration files under folder ``final/``, which 
-  correspond to the final results as reported in the paper. Settings 
-  stored in these files were derived after we had finished all the 
-  parameter searches and determine the values. For this option, please 
-  proceed to :ref:`examples_infsyst2020yang-replicate_final`.
-* using the configuration files under folder ``complete/``, which should 
-  replicate the whole process. For this option, please proceed to
-  :ref:`examples_infsyst2020yang-replicate_complete`.
-
-For either of these options, you can choose to view and edit the 
-configuration files with diagramming. 
-To do so, we recommend using 
+You can choose to view and edit the configuration files with 
+diagramming. To do so, we recommend using 
 `Gephi <https://gephi.org/>`_ (other graph visualization software should 
 suffice as long as it supports the 
 `GraphML format <https://gephi.org/users/supported-graph-formats/graphml-format/>`_ 
@@ -103,43 +79,28 @@ used for recording the configuration):
 3. Edit the edge connections to determine which methods should be 
    combined for model discovery.
 4. Switch to "Data Laboratory" tab for viewing and editing the parameter 
-   settings for each of the methods.
+   settings for each of the methods. For a brief instruction on how to 
+   alter the settings, see 
+   :ref:`examples_infsyst2020yang-replicate_parameters`.
 5. Use "File->Export->Graph file" to save the new configuration file as 
    GraphML format.
 
 
-.. _examples_infsyst2020yang-replicate_final:
-
-3a. Reproduce the final results
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Open an `Anaconda Prompt <https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-anaconda-prompt>`_ 
-(or the terminal for Unix-like systems), change to the current directory.
-
-Type
-
-``python batch.py ./configs/final/wabo.graphml [path_to_output_folder]``
-
-with path to a folder holding the output files specified.
-
-Change the file name of the input configuration to ``bpic17.graphml`` to 
-run the experiments on another event log.
-
-.. _examples_infsyst2020yang-replicate_complete:
-
-3b. Run the complete experiments
+3. Run the complete experiments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. warning::
     Due to the parameter searching procedures when running the complete 
-    experiments (as elaborated in Sect. 6.2 in the paper), long 
-    computation time may be expected.
+    experiments (as elaborated in Sect. 6.2 in the paper), a long 
+    computation time may be expected, especially for log "BPIC17" in the 
+    dataset with 475306 events.
 
 Open an `Anaconda Prompt <https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-anaconda-prompt>`_ 
 (or the terminal for Unix-like systems), change to the current directory.
 
 Type
 
-``python batch.py ./configs/complete/wabo.graphml [path_to_output_folder]``
+``python batch.py ./configs/wabo.graphml [path_to_output_folder]``
 
 with path to a folder holding the output files specified.
 
@@ -156,4 +117,83 @@ files under the specified output folder:
   the corresponding methods used for discovering the model.
 * ``.*_report.csv``, number of groups, fitness, precision values of the 
   corresponding model.
+
+
+.. _examples_infsyst2020yang-replicate_parameters:
+
+Appendix: Alter the parameter settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For event log input, the following parameter can be configured:
+
+* ``filepath``: a string specifying the path to the input event log file 
+  in IEEE XES format.
+
+For Execution Mode Learning methods,
+
+* ATonly: no configurable parameter.
+* CT+AT+TT (case attribute):
+
+    * ``case_attr_name``, a string specifying a case-level attribute in 
+      the log used for deriving case types.
+    * ``resolution``, a value of {``'hour'``, ``'day'``, ``'weekday'``}
+      specifying a time unit used for deriving time types.
+
+* CT+AT+TT (trace clustering):
+    
+    * ``fn_partition``, a string specifying the path to a file 
+      containing the trace clustering results on the input log.
+    * ``resolution``, a value of {``'hour'``, ``'day'``, ``'weekday'``}
+      specifying a time unit used for deriving time types.
+
+For Resource Grouping discovery methods,
+
+* AHC:
+
+    * ``n_groups``: a string in the format ``list(range(x, y))`` 
+      specifying the range of possible number of resource groups to be 
+      searched. Substitute ``x`` and ``y`` with actual integers desired. 
+      Note that the range is defined as ``[x, y)``, i.e., non-inclusive on 
+      the right side.
+    * ``method``, a value of {``'ward'``, ``'complete'``, ``'average'``, 
+      ``'single'``} specifying the linkage criterion. See 
+      `Scikit-learn AHC method <https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html>`_ 
+      for more information.
+    * ``metric``, a value of {``'euclidean'``, ``'cosine'``, 
+      ``'correlation'``} specifying the distance metric.
+
+* MOC:
+
+    * ``n_groups``: a string in the format ``list(range(x, y))`` 
+      specifying the range of possible number of resource groups to be 
+      searched. Substitute ``x`` and ``y`` with actual integers desired. 
+      Note that the range is defined as ``[x, y)``, i.e., non-inclusive on 
+      the right side.
+
+    * ``init``: a value of {``'random'``, ``'kmeans'``} specifying the 
+      strategy used for initializing the parameters of MOC. With 
+      ``'random'``, a random initialization with 100 runs is used; with 
+      ``'kmeans'``, the seed is derived from first applying the kMeans 
+      algorithm.
+
+
+For Execution Mode Assignment methods,
+
+* FullRecall: no configurable parameter.
+* OverallScore:
+
+    * ``w1``: a float number in range (0, 1) specifying the weighting 
+      assigned to Group Relative Stake. When given, the weighting value 
+      assigned to Group Coverage will be determined consequently as they 
+      sum up to 1.0.
+
+    * ``p``: a float number in range (0, 1) specifying the threshold 
+      value.
+    
+    * ``auto_search``: a Boolean value, i.e., ``True`` or ``False``, 
+      specifying whether or not to automatically determine the weighting 
+      values and threshold value applying grid search strategy. If 
+      ``True``, i.e., to use auto-search, then values given to 
+      ``'w1'`` and ``'p'`` will be overridden.
+
 

@@ -49,7 +49,7 @@ a folder ``data/`` with 2 event log files in IEEE XES format.
 
 .. code-block:: bash
 
-    data
+    data/
     ├── bpic17.xes
     └── wabo.xes
 
@@ -76,14 +76,25 @@ used for recording the configuration):
 1. Load a configuration file with extension ``.graphml`` using Gephi.
 2. (Optional) Toggle on "Show Node Labels" (by clicking on the **T** 
    button on the bottom-left corner) for better visualization.
+   |fig:overview|
 3. Edit the edge connections to determine which methods should be 
    combined for model discovery.
-4. Switch to "Data Laboratory" tab for viewing and editing the parameter 
-   settings for each of the methods. For a brief instruction on how to 
-   alter the settings, see 
-   :ref:`examples_infsyst2020yang-replicate_parameters`.
+4. View and edit the parameter settings for each of the methods as node 
+   attributes. For a brief instruction on how to alter the parameter 
+   values, refer to :ref:`examples_infsyst2020yang-replicate_parameters`.
+   |fig:edit|
 5. Use "File->Export->Graph file" to save the new configuration file as 
-   GraphML format.
+   GraphML format. 
+   |fig:export|
+
+.. |fig:overview| image:: infsyst2020yang-replicate_gephi_overview.png
+   :align: middle
+
+.. |fig:edit| image:: infsyst2020yang-replicate_gephi_overview-edit.png
+   :align: middle
+
+.. |fig:export| image:: infsyst2020yang-replicate_gephi_overview-export.png
+   :align: middle
 
 
 3. Run the complete experiments
@@ -122,14 +133,14 @@ files under the specified output folder:
 .. _examples_infsyst2020yang-replicate_parameters:
 
 Appendix: Alter the parameter settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For event log input, the following parameter can be configured:
+For **event log input**, the following parameter can be configured:
 
 * ``filepath``: a string specifying the path to the input event log file 
   in IEEE XES format.
 
-For Execution Mode Learning methods,
+For **Execution Mode Learning** methods,
 
 * ATonly: no configurable parameter.
 * CT+AT+TT (case attribute):
@@ -146,7 +157,7 @@ For Execution Mode Learning methods,
     * ``resolution``, a value of {``'hour'``, ``'day'``, ``'weekday'``}
       specifying a time unit used for deriving time types.
 
-For Resource Grouping discovery methods,
+For **Resource Grouping discovery** methods,
 
 * AHC:
 
@@ -157,8 +168,8 @@ For Resource Grouping discovery methods,
       the right side.
     * ``method``, a value of {``'ward'``, ``'complete'``, ``'average'``, 
       ``'single'``} specifying the linkage criterion. See 
-      `Scikit-learn AHC method <https://scikit-learn.org/stable/modules/generated/sklearn.cluster.AgglomerativeClustering.html>`_ 
-      for more information.
+      `Scikit-learn AHC method <https://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering>`_ 
+      for a reference.
     * ``metric``, a value of {``'euclidean'``, ``'cosine'``, 
       ``'correlation'``} specifying the distance metric.
 
@@ -177,7 +188,7 @@ For Resource Grouping discovery methods,
       algorithm.
 
 
-For Execution Mode Assignment methods,
+For **Execution Mode Assignment** methods,
 
 * FullRecall: no configurable parameter.
 * OverallScore:

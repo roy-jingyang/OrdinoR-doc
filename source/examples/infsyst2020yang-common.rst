@@ -156,7 +156,7 @@ under ``tools/`` folder.
 
 .. code-block:: bash
 
-    .
+    tools/
     ├── analyze_log.py
     └── annotate_by_split_logs.py
 

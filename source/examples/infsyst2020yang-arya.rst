@@ -39,13 +39,14 @@ The batch script ``run.bat`` (or the shell script ``run.sh`` for
 Unix-like systems) helps you to start the app more conveniently. The 
 source code files are contained within folder ``arya``.
 
-To begin, open an 
-`Anaconda Prompt <https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-anaconda-prompt>`_ 
-(or the terminal for Unix-like systems), change to the root directory 
-of the extracted files, and then execute the batch script (shell 
-script).
+To use the demo,
 
-You should see the prompting information as follows:
+1. Open an 
+   `Anaconda Prompt <https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-anaconda-prompt>`_ 
+   (or the terminal for Unix-like systems)
+2. Change to the root directory of the extracted files, and then execute 
+   the batch (shell) script. You should see the prompting information as 
+   follows:
 
 .. code-block:: bash
 
@@ -57,12 +58,36 @@ You should see the prompting information as follows:
     * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
     ...
 
-then please head over to `<http://0.0.0.0:5000/>`_ to access the demo.
+3. Then head over to `<http://0.0.0.0:5000/>`_ in the web browser to 
+   access the demo. You should see a webpage like the following.
+   |fig:index|
+4. Import an event log, specify and configure the methods for 
+   organizational model discovery. Then click on "Discovery".
+5. The visualization of the model will be presented when the discovery 
+   procedure succeeds. You can view the details using the following 
+   actions:
+
+   * **single-click on a group** shows the group members' resource ID;
+   * **double-click on a group** shows execution modes in which the 
+     group capabilities are highlighted;
+   * **double-click on an execution mode** expands its wild-card ("*") 
+     and shows related execution modes (so do the highlight capability 
+     nodes). When the action expands to activity types level, a process 
+     model (as a Directly-Follows Graph) will be shown for which the 
+     events correspond to the selected case type.
+     |fig:vis|
 
 .. note::
     Please allow some time for discovering a model and rendering the 
     visualization (especially when a large event log is being used), and 
-    do not refresh the webpage during the procedure.
+    *do not refresh* the webpage during the procedure.
+
+.. |fig:index| image:: infsyst2020yang-arya_index.png
+   :align: middle
+
+.. |fig:vis| image:: infsyst2020yang-arya_vis.png
+   :align: middle
+
 
 Future work
 -----------

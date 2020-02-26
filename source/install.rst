@@ -16,22 +16,27 @@ a distribution of Python featured with data science packages and
 enhanced support of package manager which will make life easier in 
 resolving software dependencies. 
 
-You may want to install only the mini version of Anaconda Python,
+You may want to install only the "mini" version of Anaconda Python,
 `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_, which 
 will suffice the prerequisites just as the 
 `complete installation <https://docs.anaconda.com/anaconda/install/>`_.
 
+Python 3 is expected to be used for OrgMiner. We have tested on 
+Anaconda with Python version 3.6.x and 3.7.x.
+
 Software Dependencies
 ---------------------
 We are working on making the installation process easier, but still some 
-of the software dependencies need to be resolved. To do so, for 
+of the software dependencies need to be resolved manually. To do so, for 
 Unix-like systems (Linux, MacOS), open the terminal; for Windows, open 
 an `Anaconda Prompt <https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-anaconda-prompt>`_.
-Enter the following command
 
-``conda install --channel conda-forge igraph graphviz``
+Enter the following commands, and confirm yes if prompted by conda.
 
-and confirm yes when prompted by conda.
+``conda install --channel alubbock --channel conda-forge graphviz pygraphviz=1.5``
+
+(credits to `Alex Lubbock <https://anaconda.org/alubbock>`_ for 
+providing the conda recipe for resolving the dependencies on Windows)
 
 Install OrgMiner
 ================
@@ -54,13 +59,12 @@ OrgMiner.
 For example, `Arya <https://github.com/roy-jingyang/OrgMiner-Arya>`_, 
 a simple client-server application that provides an interactive way for 
 organizational model discovery and visualization, relies on the 
-following packages:
+following package(s):
 
 * Flask, a lightweight WSGI web application framework. 
-* pygraphviz, a Python interface to Graphviz.
 
 To resolve the depedencies for Arya, use the following command to append 
-these optional packages:
+these optional package(s):
 
 ``pip install orgminer[arya]``
 

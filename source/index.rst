@@ -10,7 +10,6 @@
    install
    examples/index
    citing
-   credits
    bib
 
 .. _index:

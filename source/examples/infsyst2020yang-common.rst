@@ -88,7 +88,7 @@ organizational model
     2,Mary,VIP|check|afternoon;VIP|decide|afternoon
     3,Ann,normal|contact|afternoon
 
-(mappings) of collection of execution modes
+(mappings of) collection of execution modes
     Mappings showing how the derived execution modes correspond to the 
     original event log data.p
     Exported mappings will be stored in a file, of which the name will 

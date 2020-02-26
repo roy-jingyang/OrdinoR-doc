@@ -20,7 +20,6 @@ Several examples related to the organizational model mining framework
 Access to demos for some of our previous work on the topic is also 
 available, which were then built upon the earlier versions of OrgMiner:
 
-* :ref:`examples_caise2020ouyang` (demo in [ouyang2020]_)
 * :ref:`examples_bpm2018yang` (demo in [yang2018]_)
 
 .. toctree::
@@ -29,6 +28,5 @@ available, which were then built upon the earlier versions of OrgMiner:
    infsyst2020yang-common
    infsyst2020yang-arya
    infsyst2020yang-replicate
-   caise2020ouyang
    bpm2018yang
 

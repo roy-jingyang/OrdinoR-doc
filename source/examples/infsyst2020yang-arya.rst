@@ -58,7 +58,7 @@ To use the demo,
     * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
     ...
 
-3. Then head over to `<http://0.0.0.0:5000/>`_ in the web browser to 
+3. Then head over to `<http://localhost:5000/>`_ in the web browser to 
    access the demo. You should see a webpage like the following.
    |fig:index|
 4. Import an event log, specify and configure the methods for 

@@ -19,11 +19,11 @@ sys.path.append('../OrgMiner/.') # NOTE: dev-use relative path
 # -- Project information -----------------------------------------------------
 
 project = 'OrgMiner'
-copyright = '2019, Jing Yang'
+copyright = '2020, Jing Yang'
 author = 'Jing Yang (Roy)'
 
 # The full version, including alpha/beta/rc tags
-version = '0.0.1alpha'
+version = '0.0.1'
 release = version
 
 

@@ -65,16 +65,16 @@ To get started, OrgMiner needs to be installed on your machine. See
 
 OrgMiner could be used in two ways:
 
-through existed applications
-""""""""""""""""""""""""""""
+* **through existed applications**
+
 You are welcome to be a user of the developed main programs either 
 with a simple graphical interface, e.g., the prototype for producing 
 the visualization in the paper, or those interacted via 
 command-line. See :ref:`examples_index` for detailed introduction of 
 these available options as well as instructions on how to run them.
 
-through developing new applications
-"""""""""""""""""""""""""""""""""""
+* **through developing new applications**
+
 This library is established such that it allows a user to 
 build their own approaches for organizational model discovery and 
 conformance checking, either by adjusting and extending the existed 
@@ -107,4 +107,5 @@ Related Softwares
 
 .. _Email: mailto:roy.j.yang@qut.edu.au
 .. _GitHub: https://github.com/roy-jingyang/OrgMiner
+
 

@@ -62,7 +62,7 @@ To use the demo,
    access the demo. You should see a webpage like the following.
    |fig:index|
 4. Import an event log, specify and configure the methods for 
-   organizational model discovery. Then click on "Discovery".
+   organizational model discovery. Then click on "Discover model".
 5. The visualization of the model will be presented when the discovery 
    procedure succeeds. You can view the details using the following 
    actions:
@@ -88,14 +88,19 @@ To use the demo,
 .. |fig:vis| image:: infsyst2020yang-arya_vis.png
    :align: middle
 
+Planned work
+------------
+
+* |uncheck| Allow performing conformance checking of an organizational 
+  model and visualize the result
 
 Future work
 -----------
 
-The Arya program is quite naive and was developed for demonstration 
-purpose for the paper [yang2020]_ only (mainly for "visualizing" an 
-organizational model with certain interaction allowed). Hence it is not 
-meant to be a well-designed and -developed web application. 
+The Arya program is naive and was developed for demonstration purpose 
+for the paper [yang2020]_ only (mainly for "visualizing" an 
+organizational model with certain extent of interaction allowed). Hence 
+it is not meant to be a well-designed web application. 
 
 In future work we would either 
 
@@ -105,4 +110,13 @@ In future work we would either
 
 The current page will be updated should there be any changes to the demo 
 "Arya".
+
+
+.. |check| raw:: html
+
+    <input checked=""  disabled="" type="checkbox">
+
+.. |uncheck| raw:: html
+
+    <input disabled="" type="checkbox">
 

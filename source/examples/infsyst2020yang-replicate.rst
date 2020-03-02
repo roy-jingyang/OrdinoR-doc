@@ -100,11 +100,11 @@ used for recording the configuration):
 3. Run the complete experiments
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. warning::
+.. note::
     Due to the parameter searching procedures when running the complete 
     experiments (as elaborated in Sect. 6.2 in the paper), a long 
     computation time may be expected, especially for log "BPIC17" in the 
-    dataset with 475306 events.
+    dataset with 475,306 events.
 
 Open an `Anaconda Prompt <https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-anaconda-prompt>`_ 
 (or the terminal for Unix-like systems), change to the current directory.

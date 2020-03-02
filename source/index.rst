@@ -86,12 +86,8 @@ adjust the parameters to your liking.
 Further contributions to this project are welcomed.
 Email_ us or find us on GitHub_.
 
-Indices and tables
-==================
-* :ref:`modindex`
-
-Related Softwares
-=================
+Related Software
+================
 * pm4py_
 * Disco_
 * pandas_

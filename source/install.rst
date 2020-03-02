@@ -4,8 +4,8 @@
 Installation
 ************
 
-Prerequisites
-=============
+Install Prerequisites
+=====================
 
 Python
 ------
@@ -22,7 +22,7 @@ will suffice the prerequisites just as the
 `complete installation <https://docs.anaconda.com/anaconda/install/>`_.
 
 Python 3 is expected to be used for OrgMiner. We have tested on 
-Anaconda with Python version 3.6.x and 3.7.x.
+Anaconda with Python version 3.6 and 3.7.
 
 Software Dependencies
 ---------------------

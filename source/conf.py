@@ -28,6 +28,7 @@ release = version
 
 
 # -- General configuration ---------------------------------------------------
+master_doc = 'index'
 html_show_sourcelink = False
 
 # Add any Sphinx extension module names here, as strings. They can be

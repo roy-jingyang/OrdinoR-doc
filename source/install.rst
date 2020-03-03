@@ -65,8 +65,8 @@ following package(s):
 * Flask-CORS, A Flask extension for handling Cross Origin Resource 
   Sharing (CORS), making cross-origin AJAX possible.
 
-To resolve the depedencies for Arya, use the following command to append 
-these optional package(s):
+To resolve the dependencies for Arya, use the following command to 
+append these optional package(s):
 
 ``pip install orgminer[arya]``
 

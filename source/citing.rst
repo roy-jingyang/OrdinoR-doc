@@ -9,5 +9,5 @@ Please use the following publication for citing OrgMiner:
 
 For BibTeX,
 
-(bibtex cication to preprint paper to be added)
+(bibtex citation to preprint paper to be added)
 

@@ -17,7 +17,7 @@
 ********************
 Overview of OrgMiner
 ********************
-OrgMiner: Python tookit for Process Mining on the organizational 
+OrgMiner: Python toolkit for Process Mining on the organizational 
 perspective
 
 *Process mining* is an emerging discipline that bridges the gap between 
@@ -29,7 +29,7 @@ provide fact-based insights supporting business process improvement
 
 Whereas lion's share of research in process mining has been devoted to 
 the control-flow perspective of business processes, event log data may 
-also contain a wealth of information related to other pespectives. 
+also contain a wealth of information related to other perspectives. 
 Organizational perspective concerns human resources related to a 
 process, especially the ones as participants in process execution. 
 Impact of human resource behavior on process execution has been 

@@ -88,10 +88,10 @@ Email_ us or find us on GitHub_.
 
 Related Software
 ================
-* pm4py_
-* Disco_
-* pandas_
-* NetworkX_
+* Process Mining for Python: pm4py_
+* Process mining software: Disco_
+* Python Data Analysis Library: pandas_
+* Software for complex networks: NetworkX_
 
 
 .. _Python: https://www.python.org/

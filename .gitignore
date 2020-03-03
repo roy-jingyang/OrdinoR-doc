@@ -19,3 +19,7 @@ make.bat
 Makefile
 run.sh
 
+# Ignore unpublished documentation
+source/api/
+source/references/
+

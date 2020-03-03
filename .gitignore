@@ -20,6 +20,7 @@ Makefile
 run.sh
 
 # Ignore unpublished documentation
+*.old
 source/api/
 source/references/
 

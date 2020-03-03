@@ -109,7 +109,7 @@ event log data to CSV format, with two columns appended which contain
 the information extracted from the field "action_code". However, no 
 modification on the original data was made.
 
-You can edit the program code to adjust some of the parameter:
+You can edit the program code to adjust some of the parameters:
 
 * Event/Case filtering options: modify the parameters of the filtering
   functions by referring to the comments in the main program code and 

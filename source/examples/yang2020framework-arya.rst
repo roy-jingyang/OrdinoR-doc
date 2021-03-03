@@ -1,4 +1,4 @@
-.. _examples_infsyst2020yang-arya:
+.. _examples_yang2020framework-arya:
 
 "OrgMining 2.0": an interactive demo tool
 =========================================
@@ -85,10 +85,10 @@ To use the demo,
     visualization (especially when a large event log is being used), and 
     *do not refresh* the webpage during the procedure.
 
-.. |fig:index| image:: infsyst2020yang-arya_index.png
+.. |fig:index| image:: yang2020framework-arya_index.png
    :align: middle
 
-.. |fig:vis| image:: infsyst2020yang-arya_vis.png
+.. |fig:vis| image:: yang2020framework-arya_vis.png
    :align: middle
 
 Planned work

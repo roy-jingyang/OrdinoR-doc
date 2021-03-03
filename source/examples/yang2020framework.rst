@@ -1,4 +1,4 @@
-.. _examples_infsyst2020yang-common:
+.. _examples_yang2020framework:
 
 "OrgMining 2.0": organizational model mining framework
 ======================================================
@@ -7,7 +7,7 @@ This page presents the usage of several example programs used for the
 discovery and conformance checking of organizational models [yang2020]_.
 
 Source code of the these programs can be found in a 
-`GitHub repository <https://github.com/roy-jingyang/infsyst-2020-Yang_OrgMining>`_.
+`GitHub repository <https://github.com/roy-jingyang/2020-Yang_OrgMining>`_.
 
 .. note::
    Before proceeding, make sure you have installed OrgMiner on your 
@@ -17,7 +17,7 @@ How to Use
 ----------
 
 Download and extract the bundled zip from 
-`HERE <https://github.com/roy-jingyang/infsyst-2020-Yang_OrgMining/archive/master.zip>`_,
+`HERE <https://github.com/roy-jingyang/2020-Yang_OrgMining/archive/master.zip>`_,
 in which you would find the following files:
 
 .. code-block:: bash
@@ -35,14 +35,14 @@ in which you would find the following files:
         └── annotate_by_split_logs.py
 
 The ``experiment/`` folder contains the necessary files for replicating 
-the major part of the experiments. See :ref:`examples_infsyst2020yang-replicate` 
+the major part of the experiments. See :ref:`examples_yang2020framework-replicate` 
 for more information.
 
 The ``main/`` folder contains the main programs interacted via Command-Line 
 Interface, and ``tools/`` contains some utility programs. See below for 
 the usage of all these programs, respectively.
 
-.. _examples_infsyst2020yang-common_discover:
+.. _examples_yang2020framework_discover:
 
 Discover an organizational model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -176,7 +176,7 @@ trace clustering results from the outputs of "Guide Tree Miner" plugin
 `ProM 6 <http://www.promtools.org/doku.php>`_, which are a set of logs 
 produced from applying trace clustering on a source log). 
 Generated "report" files used for performing 
-:ref:`organizational model discovery <examples_infsyst2020yang-common_discover>`, 
+:ref:`organizational model discovery <examples_yang2020framework_discover>`, 
 when method **"CT+AT+TT (trace clustering)"** is selected and a trace 
 clustering report file is required as additional input.
 

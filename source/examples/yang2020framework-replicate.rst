@@ -1,4 +1,4 @@
-.. _examples_infsyst2020yang-replicate:
+.. _examples_yang2020framework-replicate:
 
 "OrgMining 2.0": replicate the experiments
 ==========================================
@@ -11,7 +11,7 @@ experiments in the paper [yang2020]_.
    machine. (:ref:`How to install? <install>`)
 
 Download and extract the bundled zip from 
-`HERE <https://github.com/roy-jingyang/infsyst-2020-Yang_OrgMining/archive/master.zip>`_,
+`HERE <https://github.com/roy-jingyang/2020-Yang_OrgMining/archive/master.zip>`_,
 **navigate to folder** ``experiment/``, in which you would find the 
 following files:
 
@@ -81,19 +81,19 @@ used for recording the configuration):
    combined for model discovery.
 4. View and edit the parameter settings for each of the methods as node 
    attributes. For a brief instruction on how to alter the parameter 
-   values, refer to :ref:`examples_infsyst2020yang-replicate_parameters`.
+   values, refer to :ref:`examples_yang2020framework-replicate_parameters`.
    |fig:edit|
 5. Use "File->Export->Graph file" to save the new configuration file as 
    GraphML format. 
    |fig:export|
 
-.. |fig:overview| image:: infsyst2020yang-replicate_gephi_overview.png
+.. |fig:overview| image:: yang2020framework-replicate_gephi_overview.png
    :align: middle
 
-.. |fig:edit| image:: infsyst2020yang-replicate_gephi_overview-edit.png
+.. |fig:edit| image:: yang2020framework-replicate_gephi_overview-edit.png
    :align: middle
 
-.. |fig:export| image:: infsyst2020yang-replicate_gephi_overview-export.png
+.. |fig:export| image:: yang2020framework-replicate_gephi_overview-export.png
    :align: middle
 
 
@@ -130,7 +130,7 @@ files under the specified output folder:
   corresponding model.
 
 
-.. _examples_infsyst2020yang-replicate_parameters:
+.. _examples_yang2020framework-replicate_parameters:
 
 Appendix: Alter the parameter settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

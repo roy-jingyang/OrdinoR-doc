@@ -9,23 +9,23 @@ See the index below.
 Several examples related to the organizational model mining framework 
 [yang2020]_:
 
-* :ref:`Discover organizational models from event logs and evaluate using 
-  conformance checking <examples_infsyst2020yang-common>`
+* :ref:`Discover organizational models from event logs and evaluate them 
+  using conformance checking measures <examples_yang2020framework>`
 * :ref:`Discover an organizational model from an event log and visualize 
-  the model <examples_infsyst2020yang-arya>` (cf. Sect. 5.2 in the paper)
+  and analyze the model <examples_yang2020framework-arya>`
 * :ref:`Replicate the experiments in the framework paper 
-  <examples_infsyst2020yang-replicate>` (cf. Sect. 6.2 in the paper)
+  <examples_yang2020framework-replicate>`
 
-Access to demos for some of our previous work on the topic is also 
-available, which were then built upon the earlier versions of OrgMiner:
+Access to demos for some of the previous work built upon the earlier 
+versions of OrgMiner:
 
-* :ref:`examples_bpm2018yang` (demo in [yang2018]_)
+* :ref:`examples_yang2018liberos` (demo in [yang2018]_)
 
 .. toctree::
    :hidden:
 
-   infsyst2020yang-common
-   infsyst2020yang-arya
-   infsyst2020yang-replicate
-   bpm2018yang
+   yang2020framework
+   yang2020framework-arya
+   yang2020framework-replicate
+   yang2018liberos
 

@@ -1,4 +1,4 @@
-.. _examples_bpm2018yang:
+.. _examples_yang2018liberos:
 
 Discover organizational groups with overlaps
 ============================================

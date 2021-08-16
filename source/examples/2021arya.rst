@@ -4,9 +4,9 @@
 ======================================================
 
 .. note::
-   An online demo can be found at 
-   https://ordinor-webapp.herokuapp.com/, which presents the toy
-   example as shown in the manuscript without any installation.
+   An live demo can be found at https://ordinor-webapp.herokuapp.com/,
+   which presents the toy example as shown in the manuscript without
+   installing *OrdinoR*.
 
 This page introduces an interactive tool developed as a webapp for
 performing organizational model mining and visualization.

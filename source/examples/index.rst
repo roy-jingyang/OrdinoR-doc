@@ -6,13 +6,13 @@ Examples
 This page provides a list of example applications developed based on
 *OrdinoR*.
 
-Cxamples related to the organizational model mining framework paper
+Examples related to the organizational model mining framework paper
 [yang2020]_ include:
 
 * :ref:`examples_2021arya`
 * :ref:`examples_2021om2-experiments`
 
-Demos built in some of our other research papers include:
+Demos presented in some of our other research papers include:
 
 * :ref:`examples_2018liberos` [yang2018]_
 

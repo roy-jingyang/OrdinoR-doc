@@ -39,7 +39,7 @@ staff deployment.
 
 OrdinoR
 -------
-   *OrdinoR: "to organize"; R: "resources"*
+   *Ordino: "to organize"; R: "resources"*
 
 *OrdinoR* is a Python_ toolkit for organizational model mining, built
 upon our recent research and capable of supporting the discovery,
@@ -62,10 +62,10 @@ How to Use
 Using the example applications
 ------------------------------
 You are welcome to be use the programs and tools developed as part of our
-research outcomes. For instance, "Arya" is a webapp providing basic a
-graphical interface to perform organizational model mining with
-*OrdinoR*. There are also command-line programs developed mainly for the
-purpose of conducting experiments in our research. 
+research outcomes. For instance, "Arya" is a webapp providing a graphical
+interface to perform organizational model mining with *OrdinoR*. 
+There are also command-line programs developed mainly for the purpose of
+conducting experiments in our research. 
 
 For more information on what's available and how to use the applications,
 please visit :ref:`examples_index`.
@@ -80,8 +80,8 @@ methods/modules that extend the *OrdinoR* library.
 We are currently working on a structured reference to the API.
 
 
-Contribute to OrdinoR
-=====================
+How to Contribute
+=================
 Further contributions to this project are welcomed. Please feel free to
 Email_ us or find us on GitHub_.
 

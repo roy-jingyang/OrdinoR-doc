@@ -16,7 +16,7 @@ Python
 PM4Py
 -----
 PM4Py_ is an open-source process mining platform written in Python. To
-install PM4PY, please visit `PM4Py Installation`_.
+install PM4Py, please visit `PM4Py Installation`_.
 
 ..
   `Anaconda Python <https://docs.anaconda.com/anaconda/>`_ is a

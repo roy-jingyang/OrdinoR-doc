@@ -1,19 +1,24 @@
-.. _examples_yang2020framework-replicate:
+.. _examples_2021om2-experiments:
 
-"OrgMining 2.0": replicate the experiments
-==========================================
+Replicate the Experiments for Validation
+========================================
 
-This page presents the guide for replicating the major part of 
-experiments in the paper [yang2020]_.
+This page provides a guide to replicate the experiments on Model
+Evaluation and Comparison in the *OrdinoR* framework paper.
 
 .. note::
-   Before proceeding, make sure you have installed OrgMiner on your 
-   machine. (:ref:`How to install? <install>`)
+   Before proceeding, make sure that *OrdinoR* has been installed.
+   (:ref:`How to install? <install>`)
 
+How to Use
+----------
+
+Download
+^^^^^^^^
 Download and extract the bundled zip from 
-`HERE <https://github.com/roy-jingyang/2020-Yang_OrgMining/archive/master.zip>`_,
-**navigate to folder** ``experiment/``, in which you would find the 
-following files:
+`<https://github.com/roy-jingyang/Org-om2_experiments/archive/refs/heads/master.zip>`_,
+**navigate to folder** ``experiment/``, in which you will find the 
+following files and folders:
 
 .. code-block:: bash
 
@@ -28,24 +33,19 @@ following files:
         ├── bpic17.bosek14.tcreport
         └── wabo.bosek5.tcreport
 
-These enables replicating the major part of the experiments in the 
-paper (i.e., those reported in Sect. 6.3.1. "Global Conformance 
-Analysis"). 
+File ``data.zip`` contains the two event logs used in the experiments.
+Folder ``configs/`` contains the configuration files with respect to the
+two logs. 
+Folder ``trace_clustering_reports/`` contains the trace clustering results
+generated from applying the Context Aware Trace Clustering technique
+[bose2009]_ ("Guide Tree Miner" in `ProM 6
+<http://www.promtools.org/doku.php>`_), prepared for the experiments.
 
-Compressed archive ``data.zip`` contains the 2 event logs used in the 
-experiments. Folder ``configs`` contains the configuration files with 
-respect to the 2 event logs. Folder ``trace_clustering_reports`` 
-contains the trace clustering results generated from applying the 
-Context Aware Trace Clustering technique [bose2009]_ ("Guide Tree Miner" 
-in `ProM 6 <http://www.promtools.org/doku.php>`_) which are prepared for 
-the experiments.
-
-Please follow the steps below to conduct the experiments.
+Follow the steps below to conduct the experiments.
 
 1. Prepare the experiment dataset
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Decompress ``data.zip`` under the current folder, which should produce 
-a folder ``data/`` with 2 event log files in IEEE XES format.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Extract ``data.zip`` under the current folder.
 
 .. code-block:: bash
 
@@ -53,12 +53,12 @@ a folder ``data/`` with 2 event log files in IEEE XES format.
     ├── bpic17.xes
     └── wabo.xes
 
-Note that these log files have been preprocessed accordingly (see Sect. 
-6.1 in the paper).
+Note that these log files have been preprocessed accordingly, as
+described in the manuscript.
 
 2. (Optional) Edit the experiment setup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Navigate to folder ``configs/``, you will find 2 configuration files:
+Navigate to folder ``configs/``, you will find two configuration files:
 
 .. code-block:: bash
 
@@ -81,42 +81,39 @@ used for recording the configuration):
    combined for model discovery.
 4. View and edit the parameter settings for each of the methods as node 
    attributes. For a brief instruction on how to alter the parameter 
-   values, refer to :ref:`examples_yang2020framework-replicate_parameters`.
+   values, refer to :ref:`examples_2021om2-experiments_appendix`.
    |fig:edit|
 5. Use "File->Export->Graph file" to save the new configuration file as 
    GraphML format. 
    |fig:export|
 
-.. |fig:overview| image:: yang2020framework-replicate_gephi_overview.png
+.. |fig:overview| image:: 2021om2_gephi_overview.png
    :align: middle
 
-.. |fig:edit| image:: yang2020framework-replicate_gephi_overview-edit.png
+.. |fig:edit| image:: 2021om2_gephi_overview-edit.png
    :align: middle
 
-.. |fig:export| image:: yang2020framework-replicate_gephi_overview-export.png
+.. |fig:export| image:: 2021om2_gephi_overview-export.png
    :align: middle
 
 
-3. Run the complete experiments
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+3. Run the experiments
+^^^^^^^^^^^^^^^^^^^^^^
 
 .. note::
-    Due to the parameter searching procedures when running the complete 
-    experiments (as elaborated in Sect. 6.2 in the paper), a long 
-    computation time may be expected, especially for log "BPIC17" in the 
+    Due to the grid search procedure and cross-validation used in the
+    experiments, a long computation time is expected depending on the
+    computer power. This is especially the case for log "BPIC17" in the
     dataset with 475,306 events.
 
-Open an `Anaconda Prompt <https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-anaconda-prompt>`_ 
-(or the terminal for Unix-like systems), change to the current directory.
+Go to the working folder and run the program with the following command
 
-Type
+``python batch.py ./configs/wabo.graphml [<path_to_output_folder>]``
 
-``python batch.py ./configs/wabo.graphml [path_to_output_folder]``
+with path to the output folder specified accordingly.
 
-with path to a folder holding the output files specified.
-
-Change the file name of the input configuration to ``bpic17.graphml`` to 
-run the experiments on another event log.
+Change the filename to ``bpic17.graphml`` to run the experiments on
+another event log.
 
 4. Check the experiment results
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -124,25 +121,24 @@ The experiments will be conducted automatically according to the
 configuration file provided. After completion, you may find two types of 
 files under the specified output folder:
 
-* ``*.om``, output organizational model, of which the file name shows 
-  the corresponding methods used for discovering the model.
-* ``.*_report.csv``, number of groups, fitness, precision values of the 
-  corresponding model.
+* ``*.om``, a discovered organizational model. The filename shows the
+  corresponding methods used for discovering this model.
+* ``.*_report.csv``, model evaluation results of a discovered model.
 
 
-.. _examples_yang2020framework-replicate_parameters:
+.. _examples_2021om2-experiments_appendix:
 
 Appendix: Alter the parameter settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-For **event log input**, the following parameter can be configured:
+For **input event log**, the following parameter can be configured:
 
 * ``filepath``: a string specifying the path to the input event log file 
   in IEEE XES format.
 
-For **Execution Mode Learning** methods,
+For **Execution Context Learning** methods,
 
-* ATonly: no configurable parameter.
+* ATonly: nothing to configurable.
 * CT+AT+TT (case attribute):
 
     * ``case_attr_name``, a string specifying a case-level attribute in 
@@ -188,9 +184,9 @@ For **Resource Grouping discovery** methods,
       algorithm.
 
 
-For **Execution Mode Assignment** methods,
+For **Resource Group Profiling** methods,
 
-* FullRecall: no configurable parameter.
+* FullRecall: nothing to configure.
 * OverallScore:
 
     * ``w1``: a float number in range (0, 1) specifying the weighting 
@@ -208,3 +204,7 @@ For **Execution Mode Assignment** methods,
       ``'w1'`` and ``'p'`` will be overridden.
 
 
+Report Issues
+-------------
+Please use the `GitHub Issues page
+<https://github.com/roy-jingyang/Org-om2_experiments/issues>`_.

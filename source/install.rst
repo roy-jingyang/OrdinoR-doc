@@ -4,69 +4,56 @@
 Installation
 ************
 
+.. _install_prerequisites:
+
 Install Prerequisites
 =====================
 
 Python
 ------
-OrgMiner is built using Python, hence it is a prerequisite to have 
-Python installed on your machine. 
-We recommend using `Anaconda Python <https://docs.anaconda.com/anaconda/>`_, 
-a distribution of Python featured with data science packages and 
-enhanced support of package manager which will make life easier in 
-resolving software dependencies. 
+*OrdinoR* requires Python_ 3.7+. We recommend using Python 3.7 or 3.8.
 
-You may want to install only the "mini" version of Anaconda Python,
-`Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_, which 
-will suffice the prerequisites just as the 
-`complete installation <https://docs.anaconda.com/anaconda/install/>`_.
+PM4Py
+-----
+PM4Py_ is an open-source process mining platform written in Python. To
+install PM4PY, please visit `PM4Py Installation`_.
 
-Python 3 is expected to be used for OrgMiner. We have tested on 
-Anaconda with Python version 3.6 and 3.7.
+..
+  `Anaconda Python <https://docs.anaconda.com/anaconda/>`_ is a
+  distribution of Python featured with data science packages and 
+  enhanced support of package manager.
+  
+  You may wish to install the "mini" version of Anaconda Python,
+  `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_, which 
+  will suffice the prerequisites just as the 
+  `complete installation <https://docs.anaconda.com/anaconda/install/>`_.
 
-Software Dependencies
----------------------
-We are working on making the installation process easier, but still some 
-of the software dependencies need to be resolved manually. To do so, for 
-Unix-like systems (Linux, MacOS), open the terminal; for Windows, open 
-an `Anaconda Prompt <https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-anaconda-prompt>`_.
+..
+  Sidenote
+  --------
+  We are working on making the installation process easier, but still some 
+  of the software dependencies need to be resolved manually. To do so, for 
+  Unix-like systems (Linux, MacOS), open the terminal; for Windows, open 
+  an `Anaconda Prompt <https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-anaconda-prompt>`_.
+  
+  Enter the following commands, and confirm yes if prompted by conda.
+  
+  ``conda install --channel alubbock --channel conda-forge graphviz pygraphviz=1.5``
+  
+  (credits to `Alex Lubbock <https://anaconda.org/alubbock>`_ for 
+  providing the conda recipe for resolving the dependencies on Windows)
+  
 
-Enter the following commands, and confirm yes if prompted by conda.
+.. _install_core:
 
-``conda install --channel alubbock --channel conda-forge graphviz pygraphviz=1.5``
+Install OrdinoR
+===============
+*OrdinoR* is hosted on the Python Package Index `PyPI
+<https://pypi.org/>`_, so you can use the following command to install
+the core package.
 
-(credits to `Alex Lubbock <https://anaconda.org/alubbock>`_ for 
-providing the conda recipe for resolving the dependencies on Windows)
+``pip install ordinor``
 
-Install OrgMiner
-================
-For Unix-like systems (Linux, MacOS), open the terminal; for Windows, 
-open an `Anaconda Prompt <https://docs.anaconda.com/anaconda/user-guide/getting-started/#open-anaconda-prompt>`_.
-Enter the following command
-
-``pip install orgminer``
-
-which should be able to install OrgMiner along with all remaining 
-mandatory dependencies resolved.
-
-.. _install_optional:
-
-Optional Packages
-=================
-Some extra packages are needed for some main programs built upon 
-OrgMiner.
-
-For example, `Arya <https://github.com/roy-jingyang/OrgMiner-Arya>`_, 
-a simple client-server application that provides an interactive way for 
-organizational model discovery and visualization, relies on the 
-following package(s):
-
-* Flask, a lightweight WSGI web application framework. 
-* Flask-CORS, A Flask extension for handling Cross Origin Resource 
-  Sharing (CORS), making cross-origin AJAX possible.
-
-To resolve the dependencies for Arya, use the following command to 
-append these optional package(s):
-
-``pip install orgminer[arya]``
-
+.. _Python: https://www.python.org/
+.. _PM4Py: https://pm4py.fit.fraunhofer.de/
+.. _PM4Py Installation: https://pm4py.fit.fraunhofer.de/install

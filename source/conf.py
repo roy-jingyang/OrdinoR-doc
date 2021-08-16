@@ -15,12 +15,12 @@ import sys
 
 # -- Project information -----------------------------------------------------
 
-project = 'OrgMiner'
-copyright = '2020, Jing Yang'
-author = 'Jing Yang (Roy)'
+project = 'OrdinoR'
+copyright = '2021, Jing Yang'
+author = 'Jing (Roy) Yang'
 
 # The full version, including alpha/beta/rc tags
-version = '0.0.1'
+version = '0.1.0'
 release = version
 
 
@@ -58,7 +58,7 @@ html_theme = 'sphinx_rtd_theme' # Read The Docs theme
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+#html_static_path = ['_static']
 
 # -- Extension configuration -------------------------------------------------
 # numpydoc config options, see
@@ -74,9 +74,9 @@ intersphinx_mapping = {
     'scipy': ('https://docs.scipy.org/doc/scipy/reference/', None),
     'sklearn': ('http://scikit-learn.org/stable', None),
     'networkx': ('https://networkx.github.io/documentation/stable', None),
-    'pandas': ('https://pandas.pydata.org/pandas-docs/stable/', None)
+    'pandas': ('https://pandas.pydata.org/pandas-docs/stable/', None),
+    #'pm4py': ('https://pm4py.fit.fraunhofer.de/static/assets/api/2.0.0/index.html', None)
 }
 
 # autodoc config options, see
 # https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
-

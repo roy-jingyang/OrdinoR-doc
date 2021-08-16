@@ -1,4 +1,4 @@
-.. OrgMiner documentation master file, created by
+.. OrdinoR documentation master file, created by
    sphinx-quickstart on Fri Dec 13 15:16:25 2019.
    You can adapt this file completely to your liking, but it should at 
    least contain the root `toctree` directive.
@@ -14,94 +14,98 @@
 
 .. _index:
 
-********************
-Overview of OrgMiner
-********************
-OrgMiner: Python toolkit for Process Mining on the organizational 
-perspective
+*******
+Welcome
+*******
 
-*Process mining* is an emerging discipline that bridges the gap between 
-traditional process science (e.g., simulation-based business process 
-analysis) and the rapidly-growing data science research (e.g., machine 
-learning on big data), which offers a comprehensive set of tools to 
-provide fact-based insights supporting business process improvement 
-[vdaalst2016]_.
+OrdinoR: Python toolkit for organizational model mining
+=======================================================
 
-Whereas lion's share of research in process mining has been devoted to 
-the control-flow perspective of business processes, event log data may 
-also contain a wealth of information related to other perspectives. 
-Organizational perspective concerns human resources related to a 
-process, especially the ones as participants in process execution. 
-Impact of human resource behavior on process execution has been 
-recognized by many literature [song2008]_, making process mining 
-research on the *organizational perspective* both interesting and 
-valuable. Outcomes from this branch of process mining research, known 
-as organizational mining, are expected to support process owners and 
-business analysts in gaining accurate and timely understandings of the 
-organizational settings (e.g., group structure, coordination) related 
-to their end-to-end business processes, and to further assist in 
-decision-making regarding human resources.
+Background
+----------
+Successful human resource management plays a crucial part in building
+organizational effectiveness, which relies decision-makers understanding
+how their employees act in groups to achieve organizational outcomes.
+Building this essential HR capability requires seasoned expertise of
+managers, empowered by the presence of accurate and timely information
+about the workforce.
 
-*OrgMiner* is developed as a Python_ library that aims at providing a 
-toolkit for research and applications on the topic of organizational 
-mining. The current focus targets the issue of organization model 
-mining, which concerns the structuring of human resources into groups 
-and how it is related with business processes.
+Process mining ([vdaalst2016]_, [song2008]_) offers useful tools to
+derive organizational models from business process execution data
+(notably in the form of event logs). 
+These models can capture workforce-related knowledge and provide insights
+that support decision-making to improve organizational structures and
+staff deployment.
 
-The current release of OrgMiner is based on our recent research progress 
-reported in a preprint paper [yang2020]_  submitted to the journal 
-of Information Systems. The library includes all the necessary modules 
-and functions to implement the approach proposed in the paper and thus 
-enables replicating the designed experiments for evaluation.
+OrdinoR
+-------
+   *OrdinoR: "to organize"; R: "resources"*
 
-Licensing information
-=====================
-The GNU GPLv3 license_ applies for artifacts of the OrgMiner project.
+*OrdinoR* is a Python_ toolkit for organizational model mining, built
+upon our recent research and capable of supporting the discovery,
+evaluation, and analysis of organizational models. It addresses several
+critical gaps in the academic literature on the topic, and opens up many
+possibilities for future research as well as applications, for example,
+conformance checking of organizational models.
+
+This Documentation
+------------------
+You can find the installation guide (:ref:`install`) and several examples
+from our research work based on *OrdinoR* (or its earlier version).
+
 
 How to Use
 ==========
-To get started, OrgMiner needs to be installed on your machine. See 
-:ref:`install` for a step-by-step guide.
 
-OrgMiner could be used in two ways:
+*OrdinoR* can be used in two ways.
 
-* **through existed applications**
+Using the example applications
+------------------------------
+You are welcome to be use the programs and tools developed as part of our
+research outcomes. For instance, "Arya" is a webapp providing basic a
+graphical interface to perform organizational model mining with
+*OrdinoR*. There are also command-line programs developed mainly for the
+purpose of conducting experiments in our research. 
 
-You are welcome to be a user of the developed main programs either 
-with a simple graphical interface, e.g., the prototype for producing 
-the visualization in the paper, or those interacted via 
-command-line. See :ref:`examples_index` for detailed introduction of 
-these available options as well as instructions on how to run them.
+For more information on what's available and how to use the applications,
+please visit :ref:`examples_index`.
 
-* **through developing new applications**
+Developing new applications
+---------------------------
+The *OrdinoR* library is built to be extensible. Users are welcome to
+develop their own approaches for organizational model mining, either
+through configuring the examples provided, or through creating new
+methods/modules that extend the *OrdinoR* library.
 
-This library is established such that it allows a user to 
-build their own approaches for organizational model discovery and 
-conformance checking, either by adjusting and extending the existed 
-methods, or by inventing new methods/modules that extend the library. 
-We are currently working on a structured references on how to do this. 
-For now a starting point could be modifying the existed programs and 
-adjust the parameters to your liking.
+We are currently working on a structured reference to the API.
 
-Further contributions to this project are welcomed.
+
+Contribute to OrdinoR
+=====================
+Further contributions to this project are welcomed. Please feel free to
 Email_ us or find us on GitHub_.
+
+
+Licensing information
+=====================
+The GNU GPLv3 license_ applies to the *OrdinoR* project.
+
 
 Related Software
 ================
-* Process Mining for Python: pm4py_
-* Process mining software: Disco_
-* Python Data Analysis Library: pandas_
-* Software for complex networks: NetworkX_
+
+* Process Mining for Python: `PM4Py`_
+* Process mining software: `Fluxicon Disco`_
+* Python Data Analysis Library: `Pandas`_
+* Software for complex networks: `NetworkX`_
 
 
 .. _Python: https://www.python.org/
 .. _license: https://www.gnu.org/licenses/gpl-3.0.en.html
-.. _pm4py: https://pm4py.fit.fraunhofer.de/
-.. _Disco: https://fluxicon.com/disco/
-.. _pandas: https://pandas.pydata.org/
+.. _PM4Py: https://pm4py.fit.fraunhofer.de/
+.. _Fluxicon Disco: https://fluxicon.com/disco/
+.. _Pandas: https://pandas.pydata.org/
 .. _NetworkX: https://networkx.github.io/
 
 .. _Email: mailto:roy.j.yang@qut.edu.au
-.. _GitHub: https://github.com/roy-jingyang/OrgMiner
-
-
+.. _GitHub: https://github.com/roy-jingyang/OrdinoR

@@ -11,7 +11,7 @@ Install Prerequisites
 
 Python
 ------
-*OrdinoR* requires Python_ 3.7+. We recommend using Python 3.7 or 3.8.
+*OrdinoR* requires Python_ 3.7.x or 3.8.x.
 
 PM4Py
 -----

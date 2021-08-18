@@ -3,7 +3,7 @@
 "Arya": Web-based Tool for Organizational Model Mining
 ======================================================
 
-.. hint::
+.. tip::
    An live demo can be found at https://ordinor.herokuapp.com/,
    which presents the toy example as shown in the manuscript without
    installing *OrdinoR*.

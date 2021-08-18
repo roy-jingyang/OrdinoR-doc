@@ -39,6 +39,8 @@ staff deployment.
 
 OrdinoR
 -------
+.. hint::
+
    *Ordino: "to organize"; R: "resources"*
 
 *OrdinoR* is a Python_ toolkit for organizational model mining, built
@@ -50,8 +52,9 @@ conformance checking of organizational models.
 
 This Documentation
 ------------------
-You can find the installation guide (:ref:`install`) and several examples
-from our research work based on *OrdinoR* (or its earlier version).
+You can find the :ref:`installation guide <install>` and several 
+:ref:`examples <examples_index>` from our research work based on *OrdinoR* 
+(or its `earlier version <https://orgminer.readthedocs.io>`_).
 
 
 How to Use
@@ -88,7 +91,8 @@ Email_ us or find us on GitHub_.
 
 Licensing information
 =====================
-The GNU GPLv3 license_ applies to the *OrdinoR* project.
+The `GNU GPLv3 license <https://www.gnu.org/licenses/gpl-3.0.en.html>`_ 
+applies to the *OrdinoR* project.
 
 
 Related Software

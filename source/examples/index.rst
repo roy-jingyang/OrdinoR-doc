@@ -14,7 +14,7 @@ Examples related to the organizational model mining framework paper
 
 Demos presented in some of our other research papers include:
 
-* :ref:`examples_2018liberos` [yang2018]_
+* :ref:`examples_2018liberos`, presented in [yang2018]_
 
 .. toctree::
    :hidden:

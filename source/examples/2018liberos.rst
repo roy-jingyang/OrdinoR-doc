@@ -21,7 +21,7 @@ How to Use
 Download
 ^^^^^^^^
 Download and extract the bundled zip from 
-`<https://github.com/roy-jingyang/Org-Liberos/archive/refs/heads/master.zip>`_,
+`this link <https://github.com/roy-jingyang/Org-Liberos/archive/refs/heads/master.zip>`_,
 in which you would find the following files:
 
 .. code-block:: bash
@@ -39,19 +39,24 @@ preprocessed as described in Sect. 5.1 in the paper [yang2018]_.
 
 Run the Program
 ^^^^^^^^^^^^^^^
-Go to the working folder and run the program with the following command
-
-``python main.py [<path_to_input_log_file>] [<path_to_output_result>]``
-
+Go to the working folder and run the program with the following command, 
 with paths to the input and output specified accordingly.
+
+.. code-block:: bash
+
+    python main.py [<path_to_input_log_file>] [<path_to_output_result>]
+
 
 Log files in the `IEEE XES <https://xes-standard.org/>`_ format are 
 supported as input.
 
 .. note::
 
-    For a simple help message on how to use the program in place, type in
-    ``python main.py --help``.
+    For a simple in-place help message on how to use the program
+
+    .. code-block:: bash
+
+        python main.py --help
 
 Output
 ^^^^^^
@@ -72,14 +77,16 @@ Demo
 ----
 Go to the working folder and run the program with the following command
 
-``python main.py example_wabo_preprocessed.xes wabo_org_model.txt``
+.. code-block:: bash
+
+    python main.py example_wabo_preprocessed.xes wabo_org_model.txt
 
 Then, follow the prompt to specify the method and configuration for 
 discovering the organizational model as defined in the paper.
 
 For instance, using method **MOC** with the desired number of groups set 
 to **5**, we will obtain the discovery result saved in the file named 
-``wabo_org_model.txt`` with contents:
+``wabo_org_model.txt`` with contents like the following:
 
 .. code-block:: bash
 
@@ -94,3 +101,4 @@ Report Issues
 -------------
 Please use the `GitHub Issues page
 <https://github.com/roy-jingyang/Org-Liberos/issues>`_.
+

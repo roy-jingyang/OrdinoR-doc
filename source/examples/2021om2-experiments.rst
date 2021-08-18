@@ -15,9 +15,9 @@ How to Use
 
 Download
 ^^^^^^^^
-Download and extract the bundled zip from 
-`<https://github.com/roy-jingyang/Org-om2_experiments/archive/refs/heads/master.zip>`_,
-**navigate to folder** ``experiment/``, in which you will find the 
+Download and extract the bundled zip from
+`this link <https://github.com/roy-jingyang/Org-om2_experiments/archive/refs/heads/master.zip>`_,
+navigate to folder ``experiment/``, in which you will find the 
 following files and folders:
 
 .. code-block:: bash
@@ -108,7 +108,9 @@ used for recording the configuration):
 
 Go to the working folder and run the program with the following command
 
-``python batch.py ./configs/wabo.graphml [<path_to_output_folder>]``
+.. code-block:: bash
+
+    python batch.py ./configs/wabo.graphml [<path_to_output_folder>]
 
 with path to the output folder specified accordingly.
 

@@ -52,8 +52,21 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme' # Read The Docs theme
-#html_theme = 'nature'           # Nature theme, e.g., Pandas
+html_theme = 'pydata_sphinx_theme'
+html_theme_options = {
+    # outlook
+    'show_prev_next': False,
+    'icon_links': [
+        {
+            'name': 'GitHub',
+            'url': 'https://github.com/roy-jingyang/OrdinoR',
+            'icon': 'fab fa-github-square',
+        }
+    ],
+
+    # navigation
+    "navigation_with_keys": False,
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

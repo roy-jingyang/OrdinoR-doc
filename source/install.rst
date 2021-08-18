@@ -52,7 +52,9 @@ Install OrdinoR
 <https://pypi.org/>`_, so you can use the following command to install
 the core package.
 
-``pip install ordinor``
+.. code-block:: bash
+
+    pip install ordinor
 
 .. _Python: https://www.python.org/
 .. _PM4Py: https://pm4py.fit.fraunhofer.de/

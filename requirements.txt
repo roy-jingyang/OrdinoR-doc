@@ -1,3 +1,5 @@
 Sphinx
 numpydoc
 sphinx-rtd-theme
+pydata-sphinx-theme
+

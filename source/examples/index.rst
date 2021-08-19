@@ -1,8 +1,8 @@
 .. _examples_index:
 
-********
+########
 Examples
-********
+########
 This page provides a list of example applications developed based on
 *OrdinoR*.
 

@@ -1,7 +1,8 @@
 .. _examples_2021arya:
 
+######################################################
 "Arya": Web-based Tool for Organizational Model Mining
-======================================================
+######################################################
 
 .. tip::
    An live demo can be found at https://ordinor.herokuapp.com/,
@@ -17,11 +18,9 @@ Source code of the tool can be found in a
    Before proceeding, make sure that *OrdinoR* has been installed.
    (:ref:`How to install? <install>`)
 
-How to Use
-----------
-
+********
 Download
-^^^^^^^^
+********
 Download and extract the bundled zip from
 `this link <https://github.com/roy-jingyang/OrdinoR-Arya/archive/refs/heads/master.zip>`_, 
 in which you would find the following files and folder:
@@ -37,8 +36,9 @@ in which you would find the following files and folder:
 The main Python program ``run.py`` helps you start the webapp. The source 
 code files are contained in folder ``arya/``.
 
+***************
 Run the Program
-^^^^^^^^^^^^^^^
+***************
 To use the demo, 
 
 1. Go to the working folder and run the program with the following
@@ -97,7 +97,8 @@ You should be able to see messages similar to the following:
    :align: middle
 
 
+*************
 Report Issues
--------------
+*************
 Please use the `GitHub Issues page
 <https://github.com/roy-jingyang/OrdinoR-Arya/issues>`_.

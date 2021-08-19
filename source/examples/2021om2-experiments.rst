@@ -1,7 +1,8 @@
 .. _examples_2021om2-experiments:
 
-Replicate the Experiments for Validation
-========================================
+###########################
+Replicating the Experiments
+###########################
 
 This page provides a guide to replicate the experiments on Model
 Evaluation and Comparison in the *OrdinoR* framework paper.
@@ -10,11 +11,9 @@ Evaluation and Comparison in the *OrdinoR* framework paper.
    Before proceeding, make sure that *OrdinoR* has been installed.
    (:ref:`How to install? <install>`)
 
-How to Use
-----------
-
+********
 Download
-^^^^^^^^
+********
 Download and extract the bundled zip from
 `this link <https://github.com/roy-jingyang/Org-om2_experiments/archive/refs/heads/master.zip>`_,
 navigate to folder ``experiment/``, in which you will find the 
@@ -43,8 +42,12 @@ generated from applying the Context Aware Trace Clustering technique
 
 Follow the steps below to conduct the experiments.
 
+*******************
+Run the Experiments
+*******************
+
 1. Prepare the experiment dataset
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=================================
 Extract ``data.zip`` under the current folder.
 
 .. code-block:: bash
@@ -57,7 +60,7 @@ Note that these log files have been preprocessed accordingly, as
 described in the manuscript.
 
 2. (Optional) Edit the experiment setup
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+=======================================
 Navigate to folder ``configs/``, you will find two configuration files:
 
 .. code-block:: bash
@@ -97,8 +100,8 @@ used for recording the configuration):
    :align: middle
 
 
-3. Run the experiments
-^^^^^^^^^^^^^^^^^^^^^^
+3. Run an experiment
+====================
 
 .. note::
     Due to the grid search procedure and cross-validation used in the
@@ -118,7 +121,7 @@ Change the filename to ``bpic17.graphml`` to run the experiments on
 another event log.
 
 4. Check the experiment results
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+===============================
 The experiments will be conducted automatically according to the 
 configuration file provided. After completion, you may find two types of 
 files under the specified output folder:
@@ -130,8 +133,9 @@ files under the specified output folder:
 
 .. _examples_2021om2-experiments_appendix:
 
-Appendix: Alter the parameter settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+****************************
+Appendix: Parameter Settings
+****************************
 
 For **input event log**, the following parameter can be configured:
 
@@ -205,8 +209,8 @@ For **Resource Group Profiling** methods,
       ``True``, i.e., to use auto-search, then values given to 
       ``'w1'`` and ``'p'`` will be overridden.
 
-
+*************
 Report Issues
--------------
+*************
 Please use the `GitHub Issues page
 <https://github.com/roy-jingyang/Org-om2_experiments/issues>`_.

@@ -1,20 +1,21 @@
 .. _install:
 
-************
+############
 Installation
-************
+############
 
 .. _install_prerequisites:
 
+*********************
 Install Prerequisites
-=====================
+*********************
 
-Python
-------
+Python 3
+========
 *OrdinoR* requires Python_ **3.7+**. We recommend using Python 3.7.x or 3.8.x.
 
 PM4Py
------
+=====
 PM4Py_ is an open-source process mining platform written in Python. To
 install PM4Py, please visit `PM4Py Installation`_.
 
@@ -46,11 +47,11 @@ install PM4Py, please visit `PM4Py Installation`_.
 
 .. _install_core:
 
+***************
 Install OrdinoR
-===============
+***************
 *OrdinoR* is hosted on the Python Package Index `PyPI
-<https://pypi.org/>`_, so you can use the following command to install
-the core package.
+<https://pypi.org/>`_, so you can install the core package by doing
 
 .. code-block:: bash
 

@@ -14,15 +14,24 @@
 
 .. _index:
 
-*******
-Welcome
-*******
+#####################
+OrdinoR Documentation
+#####################
 
-OrdinoR: Python toolkit for organizational model mining
-=======================================================
+.. hint::
 
+   *Ordino: "to organize"; R: "resources"*
+
+*OrdinoR* is a Python_ toolkit for organizational model mining, built
+upon our recent research and capable of supporting the discovery,
+evaluation, and analysis of organizational models based on event logs. 
+It addresses several critical gaps in the academic literature on the
+topic, and opens up many possibilities for future research as well as
+applications, for example, conformance checking of organizational models.
+
+**********
 Background
-----------
+**********
 Successful human resource management plays a crucial part in building
 organizational effectiveness, which relies decision-makers understanding
 how their employees act in groups to achieve organizational outcomes.
@@ -37,33 +46,18 @@ These models can capture workforce-related knowledge and provide insights
 that support decision-making to improve organizational structures and
 staff deployment.
 
-OrdinoR
--------
-.. hint::
+**********
+How to Use
+**********
 
-   *Ordino: "to organize"; R: "resources"*
-
-*OrdinoR* is a Python_ toolkit for organizational model mining, built
-upon our recent research and capable of supporting the discovery,
-evaluation, and analysis of organizational models. It addresses several
-critical gaps in the academic literature on the topic, and opens up many
-possibilities for future research as well as applications, for example,
-conformance checking of organizational models.
-
-This Documentation
-------------------
 You can find the :ref:`installation guide <install>` and several 
 :ref:`examples <examples_index>` from our research work based on *OrdinoR* 
 (or its `earlier version <https://orgminer.readthedocs.io>`_).
 
-
-How to Use
-==========
-
 *OrdinoR* can be used in two ways.
 
 Using the example applications
-------------------------------
+==============================
 You are welcome to be use the programs and tools developed as part of our
 research outcomes. For instance, "Arya" is a webapp providing a graphical
 interface to perform organizational model mining with *OrdinoR*. 
@@ -74,7 +68,7 @@ For more information on what's available and how to use the applications,
 please visit :ref:`examples_index`.
 
 Developing new applications
----------------------------
+===========================
 The *OrdinoR* library is built to be extensible. Users are welcome to
 develop their own approaches for organizational model mining, either
 through configuring the examples provided, or through creating new
@@ -83,20 +77,23 @@ methods/modules that extend the *OrdinoR* library.
 We are currently working on a structured reference to the API.
 
 
+*****************
 How to Contribute
-=================
+*****************
 Further contributions to this project are welcomed. Please feel free to
 Email_ us or find us on GitHub_.
 
 
-Licensing information
-=====================
+*********************
+Licensing Information
+*********************
 The `GNU GPLv3 license <https://www.gnu.org/licenses/gpl-3.0.en.html>`_ 
 applies to the *OrdinoR* project.
 
 
+****************
 Related Software
-================
+****************
 
 * Process Mining for Python: `PM4Py`_
 * Process mining software: `Fluxicon Disco`_

@@ -1,7 +1,8 @@
 .. _examples_2018liberos:
 
+###################################################################
 Finding the "Liberos": Discover Organizational Models with Overlaps
-===================================================================
+###################################################################
 
 This page presents a demo program used in a BPM 2018 paper [yang2018]_
 for discovering groups with overlaps. Addressing this discovery task can
@@ -15,11 +16,9 @@ the source code of the following demo now resides.
    Before proceeding, make sure that *OrdinoR* has been installed.
    (:ref:`How to install? <install>`)
 
-How to Use
-----------
-
+********
 Download
-^^^^^^^^
+********
 Download and extract the bundled zip from 
 `this link <https://github.com/roy-jingyang/Org-Liberos/archive/refs/heads/master.zip>`_,
 in which you would find the following files:
@@ -37,8 +36,9 @@ provides an example event log sourced from
 `4TU.ResearchData <https://data.4tu.nl/repository/uuid:a07386a5-7be3-4367-9535-70bc9e77dbe6>`_,
 preprocessed as described in Sect. 5.1 in the paper [yang2018]_.
 
+***************
 Run the Program
-^^^^^^^^^^^^^^^
+***************
 Go to the working folder and run the program with the following command, 
 with paths to the input and output specified accordingly.
 
@@ -58,8 +58,6 @@ supported as input.
 
         python main.py --help
 
-Output
-^^^^^^
 The output file is formatted as shown below. Each row represents a 
 discovered resource group, and member resource ids are separated by
 semicolons:
@@ -73,8 +71,9 @@ semicolons:
 
 See below for an example.
 
-Demo
-----
+******
+A Demo
+******
 Go to the working folder and run the program with the following command
 
 .. code-block:: bash
@@ -97,8 +96,9 @@ to **5**, we will obtain the discovery result saved in the file named
     3,Resource28;admin2;Resource26;Resource09;Resource12;Resource25;admin1
     4,Resource10
 
+*************
 Report Issues
--------------
+*************
 Please use the `GitHub Issues page
 <https://github.com/roy-jingyang/Org-Liberos/issues>`_.
 

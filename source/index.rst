@@ -33,8 +33,9 @@ applications, for example, conformance checking of organizational models.
 Background
 **********
 Successful human resource management plays a crucial part in building
-organizational effectiveness, which relies decision-makers understanding
-how their employees act in groups to achieve organizational outcomes.
+organizational effectiveness, which relies on decision-makers
+understanding how their employees act in groups to achieve organizational
+outcomes.
 Building this essential HR capability requires seasoned expertise of
 managers, empowered by the presence of accurate and timely information
 about the workforce.
@@ -42,9 +43,8 @@ about the workforce.
 Process mining ([vdaalst2016]_, [song2008]_) offers useful tools to
 derive organizational models from business process execution data
 (notably in the form of event logs). 
-These models can capture workforce-related knowledge and provide insights
-that support decision-making to improve organizational structures and
-staff deployment.
+These models can capture workforce-related knowledge and provide
+organizations with insights into their structures and staff deployment.
 
 **********
 How to Use
@@ -58,7 +58,7 @@ You can find the :ref:`installation guide <install>` and several
 
 Using the example applications
 ==============================
-You are welcome to be use the programs and tools developed as part of our
+You are welcome to use the programs and tools developed as part of our
 research outcomes. For instance, "Arya" is a webapp providing a graphical
 interface to perform organizational model mining with *OrdinoR*. 
 There are also command-line programs developed mainly for the purpose of
@@ -80,7 +80,7 @@ We are currently working on a structured reference to the API.
 *****************
 How to Contribute
 *****************
-Further contributions to this project are welcomed. Please feel free to
+We welcome further contributions to this project. Please feel free to
 Email_ us or find us on GitHub_.
 
 

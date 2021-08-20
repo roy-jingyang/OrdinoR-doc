@@ -41,7 +41,7 @@ managers, empowered by the presence of accurate and timely information
 about the workforce.
 
 Process mining [vdaalst2016]_ offers useful tools to derive
-organizational models [song2008]_ (from business process execution data
+organizational models [song2008]_ from business process execution data
 (notably in the form of event logs). 
 These models can capture workforce-related knowledge and provide
 organizations with insights into their structures and staff deployment.

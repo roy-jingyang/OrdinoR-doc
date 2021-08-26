@@ -55,7 +55,7 @@ exclude_patterns = []
 #html_theme = 'sphinx_rtd_theme'
 html_theme = 'pydata_sphinx_theme'
 
-html_logo = 'ordinor.png'
+html_logo = 'ordinor_logo_transparent.png'
 
 html_theme_options = {
     # outlook
